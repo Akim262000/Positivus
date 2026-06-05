@@ -302,7 +302,7 @@ body {
 .border-white {
   border: 1px solid white;
 }
-
+/* 
 .border-lime {
   background-image: url(/images/border-lime.svg);
   background-position: center;
@@ -310,6 +310,11 @@ body {
   width: 100%;
   max-width: 606px;
   height: 266px;
+} */
+
+.border-lime-new {
+  width: 100%;
+  height: auto;
 }
 
 .border-end-white {
