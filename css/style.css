@@ -16,7 +16,8 @@ body {
 }
 
 .bg-dark-grey {
-background-color: #292A32;}
+  background-color: #292a32;
+}
 
 .text-black {
   color: #000;
@@ -44,6 +45,10 @@ background-color: #292A32;}
 
 .mt-66 {
   margin-top: 66px;
+}
+
+.mt-48 {
+  margin-top: 48px;
 }
 
 .mt-40 {
@@ -171,8 +176,17 @@ background-color: #292A32;}
   padding-right: 52px;
 }
 
+.py-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 .pt-48 {
   padding-top: 48px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
 }
 
 .px-40 {
@@ -197,6 +211,14 @@ background-color: #292A32;}
 .px-30 {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
 }
 
 .pb-28 {
@@ -278,6 +300,10 @@ background-color: #292A32;}
   font-size: 18px;
 }
 
+.border-top-black {
+  border-top: 1px solid black;
+}
+
 .border-bottom-black {
   border-bottom: 1px solid black;
 }
@@ -291,21 +317,50 @@ background-color: #292A32;}
 }
 
 .border-lime {
-  background-image: url(/images/border-lime.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  max-width: 606px;
-  height: 266px;
+  border: 1px solid #b9ff66;
+  position: relative;
+}
+.border-lime::before,
+.border-lime::after {
+  content: "";
+  position: absolute;
+  left: 51px;
+  bottom: -60px;
+  border: 30px solid transparent;
+  border-top: 30px solid #b9ff66;
+}
+.border-lime::after {
+  border-top: 30px solid #191a23;
+  bottom: -59px;
+}
+
+.border-end-white {
+  border-right: 1px solid #dee2e6 !important;
 }
 
 .border-radius-top {
   border-radius: 45px 45px 0 0;
 }
 
-.testimonials-card {
-  width: 606px;
+/* Отключение фокуса кнопок */
+.btn:focus {
+  box-shadow: none;
 }
+
+.pm-icon {
+  transition: transform 0.5s ease;
+}
+
+.pm-icon.rotate {
+  transform: rotate(180deg);
+}
+
+
+
+.testimonials-card {
+  max-width: 606px;
+}
+/****************************************/
 
 .img-black-white {
   mix-blend-mode: luminosity;
@@ -316,6 +371,10 @@ background-color: #292A32;}
   border: 1px solid #191a23;
   box-shadow: 0px 5px 0px #191a23;
   height: 100%;
+}
+
+.services-img {
+  max-width: 210px;
 }
 
 .proposal img {
@@ -336,25 +395,13 @@ background-color: #292A32;}
   box-shadow: 0px 5px 0px #191a23;
 }
 
+.testimonials-card p{
+  height: 260px;
+}
+
 .testimonials-slider .slick-track {
   display: flex;
   gap: 50px;
-}
-
-.testimonials-slider .slick-dots li button:before {
-  content: "";
-  opacity: 1;
-  width: 20px;
-  height: 20px;
-  display: block;
-  background-image: url("/images/slider-dots-star.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.testimonials-slider .slick-dots li.slick-active button:before {
-  background-image: url("/images/slider-dots-star-active.png");
 }
 
 .testimonials-slider .slick-dots {
@@ -429,12 +476,21 @@ background-color: #292A32;}
 
 .contact-form {
   max-width: 556px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-grey {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-left: 100px;
 }
 
 .contact-img {
   top: 60px;
   right: 0;
   transform: translateX(47%);
+  z-index: 1;
 }
 
 .contact-form textarea {

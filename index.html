@@ -31,11 +31,12 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <link rel="stylesheet" type="text/css" href="/css/media.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light pt-60 pb-70">
+      <nav class="navbar navbar-expand-xl navbar-light pt-60 pb-70">
         <div class="container d-flex flex-row justify-content-between">
           <a class="navbar-brand" href="#">
             <img src="/images/positivus-logo.svg" alt="" />
@@ -52,7 +53,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
+            <div class="navbar-nav ms-auto d-flex align-items-center">
               <a
                 class="nav-link font-20 fw-normal px-0 me-40 active"
                 aria-current="page"
@@ -69,10 +70,10 @@
                 >Pricing</a
               >
               <a class="nav-link font-20 fw-normal px-0 me-40" href="#">Blog</a>
+              <button class="font-20 fw-normal px-35 py-20 br-14 bg-white">
+                Request a quote
+              </button>
             </div>
-            <button class="font-20 fw-normal px-35 py-20 br-14 bg-white">
-              Request a quote
-            </button>
           </div>
         </div>
       </nav>
@@ -80,8 +81,8 @@
 
     <div class="container">
       <section class="about pb-70">
-        <div class="row">
-          <div class="col-6">
+        <div class="row d-flex flex-column flex-md-row">
+          <div class="col-12 col-md-6 order-2 order-md-1">
             <h1 class="font-60 fw-medium lh-77 mb-35">
               Navigating the digital landscape for success
             </h1>
@@ -90,89 +91,107 @@
               online through a range of services including SEO, PPC, social
               media marketing, and content creation.
             </p>
-            <button
-              class="font-20 fw-normal lh-28 text-white bg-dark px-35 py-20 border-0 br-14"
-            >
-              Book a consultation
-            </button>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <button
+                class="font-20 fw-normal lh-28 text-white bg-dark px-35 py-20 border-0 br-14"
+              >
+                Book a consultation
+              </button>
+            </div>
           </div>
-          <div class="col-6">
-            <img class="img-fluid" src="/images/navigating.png" alt="" />
+          <div
+            class="col-12 col-md-6 order-1 order-md-2 d-flex align-items-center align-items-md-start"
+          >
+            <img
+              class="object-fit-cover w-100"
+              src="/images/navigating.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
 
       <section class="clients pb-70">
-        <div class="row">
-          <div class="d-flex flex-row justify-content-between">
-            <div class="col-auto">
-              <img
-                class="img-black-white"
-                src="/images/clients/client-1.svg"
-                alt=""
-              />
-            </div>
-            <div class="col-auto">
-              <img
-                class="img-black-white"
-                src="/images/clients/client-2.svg"
-                alt=""
-              />
-            </div>
-            <div class="col-auto">
-              <img
-                class="img-black-white"
-                src="/images/clients/client-3.svg"
-                alt=""
-              />
-            </div>
-            <div class="col-auto">
-              <img
-                class="img-black-white"
-                src="/images/clients/client-4.svg"
-                alt=""
-              />
-            </div>
-            <div class="col-auto">
-              <img
-                class="img-black-white"
-                src="/images/clients/client-5.svg"
-                alt=""
-              />
-            </div>
-            <div class="col-auto">
-              <img
-                class="img-black-white"
-                src="/images/clients/client-6.svg"
-                alt=""
-              />
-            </div>
+        <div
+          class="row d-flex flex-row justify-content-center justify-content-lg-between"
+        >
+          <div class="col-auto">
+            <img
+              class="img-black-white img-fluid"
+              src="/images/clients/client-1.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              class="img-black-white img-fluid"
+              src="/images/clients/client-2.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              class="img-black-white"
+              src="/images/clients/client-3.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              class="img-black-white"
+              src="/images/clients/client-4.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              class="img-black-white"
+              src="/images/clients/client-5.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              class="img-black-white"
+              src="/images/clients/client-6.svg"
+              alt=""
+            />
           </div>
         </div>
       </section>
 
       <section class="services pb-100">
-        <div class="d-flex flex-row align-items-center pb-80">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center align-items-md-start pb-80"
+        >
           <h2 class="font-40 fw-medium lh-51 bg-lime px-2 mb-0 me-40">
             Services
           </h2>
-          <p class="font-18 fw-normal lh-23 mb-0">
+          <p
+            class="font-18 fw-normal text-center text-md-start mt-4 mt-md-0 lh-23 mb-0"
+          >
             At our digital marketing agency, we offer a range of services to<br />
             help businesses grow and succeed online. These services include:
           </p>
         </div>
-        <div class="row gx-5 gy-5">
+        <div class="row gx-0 gx-md-5 gy-5">
           <!-- 1 -->
-          <div class="col-12 col-xl-6">
-            <div class="p-50 bg-grey br-45 services-card">
-              <div class="d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column justify-content-between">
-                  <div class="">
+          <div class="col-12 col-xl-6 d-flex">
+            <div class="p-50 bg-grey br-45 services-card h-100 w-100">
+              <div
+                class="d-flex flex-column flex-sm-row justify-content-between"
+              >
+                <div
+                  class="d-flex flex-column justify-content-between order-2 order-sm-1"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <h3
                       class="font-30 fw-medium lh-38 bg-lime px-2 mb-0 br-8"
                       style="max-width: fit-content"
                     >
-                      Search engine
+                      Search&nbsp;engine
                     </h3>
                     <h3
                       class="font-30 fw-medium lh-38 bg-lime px-2 mb-0 br-8"
@@ -181,7 +200,9 @@
                       optimization
                     </h3>
                   </div>
-                  <div class="">
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <a
                       class="font-20 fw-normal lh-28 mb-0 text-decoration-none text-black"
                       href=""
@@ -195,18 +216,28 @@
                     >
                   </div>
                 </div>
-                <img src="/images/services/services-1.svg" alt="" />
+                <img
+                  class="mx-auto mx-sm-0 services-img order-1 order-sm-2"
+                  src="/images/services/services-1.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <!-- 2 -->
-          <div class="col-12 col-xl-6">
-            <div class="p-50 bg-lime br-45 services-card">
-              <div class="d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column justify-content-between">
-                  <div class="">
+          <div class="col-12 col-xl-6 d-flex">
+            <div class="p-50 bg-lime br-45 services-card h-100 w-100">
+              <div
+                class="d-flex flex-column flex-sm-row justify-content-between"
+              >
+                <div
+                  class="d-flex flex-column justify-content-between order-2 order-sm-1"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <h3
-                      class="font-30 fw-medium lh-38 bg-white px-2 mb-0 br-8"
+                      class="font-30 fw-medium lh-38 bg-white px-2 mb-0 br-8 text-center text-sm-start"
                       style="max-width: fit-content"
                     >
                       Pay-per-click
@@ -218,7 +249,9 @@
                       advertising
                     </h3>
                   </div>
-                  <div class="">
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <a
                       class="font-20 fw-normal lh-28 mb-0 text-decoration-none text-black"
                       href=""
@@ -232,16 +265,26 @@
                     >
                   </div>
                 </div>
-                <img src="/images/services/services-2.svg" alt="" />
+                <img
+                  class="mx-auto mx-sm-0 services-img order-1 order-sm-2 img-fluid"
+                  src="/images/services/services-2.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <!-- 3 -->
-          <div class="col-12 col-xl-6">
-            <div class="p-50 bg-dark br-45 services-card">
-              <div class="d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column justify-content-between">
-                  <div class="">
+          <div class="col-12 col-xl-6 d-flex">
+            <div class="p-50 bg-dark br-45 services-card h-100 w-100">
+              <div
+                class="d-flex flex-column flex-sm-row justify-content-between"
+              >
+                <div
+                  class="d-flex flex-column justify-content-between order-2 order-sm-1"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <h3
                       class="font-30 fw-medium lh-38 bg-white px-2 mb-0 br-8"
                       style="max-width: fit-content"
@@ -255,7 +298,9 @@
                       Marketing
                     </h3>
                   </div>
-                  <div class="">
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <a
                       class="font-20 fw-normal lh-28 mb-0 text-decoration-none text-white"
                       href=""
@@ -270,16 +315,26 @@
                     </a>
                   </div>
                 </div>
-                <img src="/images/services/services-3.svg" alt="" />
+                <img
+                  class="mx-auto mx-sm-0 services-img order-1 order-sm-2 img-fluid"
+                  src="/images/services/services-3.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <!-- 4 -->
-          <div class="col-12 col-xl-6">
-            <div class="p-50 bg-grey br-45 services-card">
-              <div class="d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column justify-content-between">
-                  <div class="">
+          <div class="col-12 col-xl-6 d-flex">
+            <div class="p-50 bg-grey br-45 services-card h-100 w-100">
+              <div
+                class="d-flex flex-column flex-sm-row justify-content-between"
+              >
+                <div
+                  class="d-flex flex-column justify-content-between order-2 order-sm-1"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <h3
                       class="font-30 fw-medium lh-38 bg-lime px-2 mb-0 br-8"
                       style="max-width: fit-content"
@@ -293,7 +348,9 @@
                       Marketing
                     </h3>
                   </div>
-                  <div class="">
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <a
                       class="font-20 fw-normal lh-28 mb-0 text-decoration-none text-black"
                       href=""
@@ -307,16 +364,26 @@
                     >
                   </div>
                 </div>
-                <img src="/images/services/services-4.svg" alt="" />
+                <img
+                  class="mx-auto mx-sm-0 services-img order-1 order-sm-2 img-fluid"
+                  src="/images/services/services-4.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <!-- 5 -->
-          <div class="col-12 col-xl-6">
-            <div class="p-50 bg-lime br-45 services-card">
-              <div class="d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column justify-content-between">
-                  <div class="">
+          <div class="col-12 col-xl-6 d-flex">
+            <div class="p-50 bg-lime br-45 services-card h-100 w-100">
+              <div
+                class="d-flex flex-column flex-sm-row justify-content-between"
+              >
+                <div
+                  class="d-flex flex-column justify-content-between order-2 order-sm-1"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <h3
                       class="font-30 fw-medium lh-38 bg-white px-2 mb-0 br-8"
                       style="max-width: fit-content"
@@ -330,7 +397,9 @@
                       Creation
                     </h3>
                   </div>
-                  <div class="">
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <a
                       class="font-20 fw-normal lh-28 mb-0 text-decoration-none text-black"
                       href=""
@@ -344,18 +413,28 @@
                     >
                   </div>
                 </div>
-                <img src="/images/services/services-5.svg" alt="" />
+                <img
+                  class="mx-auto mx-sm-0 services-img order-1 order-sm-2 img-fluid"
+                  src="/images/services/services-5.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <!-- 6 -->
-          <div class="col-12 col-xl-6">
-            <div class="p-50 bg-dark br-45 services-card">
-              <div class="d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column justify-content-between">
-                  <div class="">
+          <div class="col-12 col-xl-6 d-flex">
+            <div class="p-50 bg-dark br-45 services-card h-100 w-100">
+              <div
+                class="d-flex flex-column flex-sm-row justify-content-between"
+              >
+                <div
+                  class="d-flex flex-column justify-content-between order-2 order-sm-1"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <h3
-                      class="font-30 fw-medium lh-38 bg-lime px-2 mb-0 br-8"
+                      class="font-30 fw-medium lh-38 bg-lime px-2 mb-0 br-8 text-center text-sm-start"
                       style="max-width: fit-content"
                     >
                       Analytics and
@@ -367,7 +446,9 @@
                       Tracking
                     </h3>
                   </div>
-                  <div class="">
+                  <div
+                    class="d-flex flex-column align-items-center align-items-sm-start mt-3 mt-sm-0"
+                  >
                     <a
                       class="font-20 fw-normal lh-28 mb-0 text-decoration-none text-white"
                       href=""
@@ -381,52 +462,76 @@
                     >
                   </div>
                 </div>
-                <img src="/images/services/services-6.svg" alt="" />
+                <img
+                  class="mx-auto mx-sm-0 services-img order-1 order-sm-2 img-fluid"
+                  src="/images/services/services-6.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="proposal pb-70">
-        <div class="row bg-grey position-relative br-45">
-          <div class="col-5 p-60">
-            <h2 class="font-30 fw-medium text-black mb-26 lh-38">
-              Let's make things happen
-            </h2>
-            <p class="font-18 fw-normal text-black mb-26 lh-23">
-              Contact us today to learn more about how our digital marketing
-              services can help your business grow and succeed online.
-            </p>
-            <button
-              class="font-20 fw-normal lh-28 bg-dark br-14 px-35 py-20 border-0 text-white mb-0"
-            >
-              Get your free proposal
-            </button>
+      <section class="proposal bg-grey br-45 mb-70">
+        <div class="row position-relative">
+          <div class="col-12 col-lg-5">
+            <div class="p-60 br-45">
+              <h2
+                class="font-30 fw-medium text-black text-center text-lg-start mb-26 lh-38"
+              >
+                Let's make things happen
+              </h2>
+              <p class="font-18 fw-normal text-black mb-26 lh-23">
+                Contact us today to learn more about how our digital marketing
+                services can help your business grow and succeed online.
+              </p>
+              <div
+                class="d-flex justify-content-center justify-content-lg-start"
+              >
+                <button
+                  class="font-20 fw-normal lh-28 bg-dark br-14 px-35 py-20 border-0 text-white mb-0"
+                >
+                  Get your free proposal
+                </button>
+              </div>
+            </div>
           </div>
-          <img class="position-absolute" src="/images/proposal.svg" alt="" />
+          <img
+            class="position-absolute d-none d-lg-block"
+            src="/images/proposal.svg"
+            alt=""
+          />
         </div>
       </section>
 
       <section class="studies pt-70 pb-70">
-        <div class="d-flex flex-row pb-80">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center align-items-md-start pb-80"
+        >
           <h2
-            class="font-40 fw-medium text-black bg-lime px-2 me-40 lh-51 mb-0 br-8"
+            class="font-40 fw-medium text-black bg-lime px-2 px-0 me-40 lh-51 mb-0 br-8"
           >
             Case Studies
           </h2>
-          <div class="">
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+          <div class="mt-4 mt-md-0">
+            <p
+              class="font-18 fw-normal text-black lh-23 m-0 text-center text-md-start text"
+            >
               Explore Real-Life Examples of Our Proven Digital Marketing
             </p>
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               Success through Our Case Studies
             </p>
           </div>
         </div>
         <div class="bg-dark br-45 py-70 px-60">
-          <div class="row">
-            <div class="col-4 border-end pe-64">
+          <div class="row p-3 p-lg-0">
+            <div
+              class="col-12 col-lg-4 border-end-white border-bottom-white pe-64 ps-0 pb-4 pb-lg-0"
+            >
               <p class="font-18 fw-normal text-white">
                 For a local restaurant, we implemented a targeted PPC campaign
                 that resulted in a 50% increase in website traffic and a 25%
@@ -438,7 +543,9 @@
                 >Learn more<img class="ms-3" src="/images/arrow-lime.svg"
               /></a>
             </div>
-            <div class="col-4 border-end ps-64 pe-64">
+            <div
+              class="col-12 col-lg-4 border-end-white border-bottom-white ps-64 pe-64 py-4 py-lg-0"
+            >
               <p class="font-18 fw-normal text-white">
                 For a local restaurant, we implemented a targeted PPC campaign
                 that resulted in a 50% increase in website traffic and a 25%
@@ -450,7 +557,7 @@
                 >Learn more<img class="ms-3" src="/images/arrow-lime.svg"
               /></a>
             </div>
-            <div class="col-4 ps-64">
+            <div class="col-12 col-lg-4 ps-64 pt-4 pt-lg-0">
               <p class="font-18 fw-normal text-white">
                 For a local restaurant, we implemented a targeted PPC campaign
                 that resulted in a 50% increase in website traffic and a 25%
@@ -467,17 +574,23 @@
       </section>
       <!-- ************************************************************working-process************************************************************ -->
       <section class="working-process pt-70">
-        <div class="d-flex flex-row pb-80">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center align-items-md-start pb-80"
+        >
           <h2
-            class="font-40 fw-medium text-black bg-lime px-2 me-40 lh-51 mb-0 br-8"
+            class="font-40 fw-medium text-black bg-lime text-center px-2 me-40 lh-51 mb-0 br-8"
           >
             Our Working Process
           </h2>
-          <div class="">
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+          <div class="mt-4 mt-md-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               Step-by-Step Guide to Achieving
             </p>
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               Your Business Goals
             </p>
           </div>
@@ -485,10 +598,13 @@
 
         <div class="accordion" id="accordionExample">
           <div class="working-process-card br-45 bg-lime px-60 mb-30">
-            <div class="d-flex justify-content-between" id="headingOne">
+            <div
+              class="d-flex justify-content-between pt-30 pb-30"
+              id="headingOne"
+            >
               <div class="d-flex flex-row align-items-center">
                 <span class="font-60 fw-medium text-black mb-0 me-20">01</span>
-                <h3 class="font-30 fw-medium text-black">Consultation</h3>
+                <h3 class="font-30 fw-medium text-black m-0">Consultation</h3>
               </div>
               <button
                 class="btn btn-link btn-block text-left process-button"
@@ -498,7 +614,7 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                <img class="pm-icon" src="/images/minus.png" alt="" />
+                <img class="pm-icon rotate" src="/images/minus.png" alt="" />
               </button>
             </div>
 
@@ -508,8 +624,8 @@
               aria-labelledby="headingOne"
               data-parent="#accordionExample"
             >
-              <div class="">
-                <p class="font-18 fw-normal text-black">
+              <div class="border-top-black pt-30">
+                <p class="font-18 fw-normal text-black pb-30">
                   During the initial consultation, we will discuss your business
                   goals and objectives, target audience, and current marketing
                   efforts. This will allow us to understand your needs and
@@ -520,7 +636,10 @@
           </div>
 
           <div class="working-process-card br-45 bg-grey px-60 mb-30">
-            <div class="d-flex justify-content-between" id="headingTwo">
+            <div
+              class="d-flex justify-content-between pt-30 pb-30"
+              id="headingTwo"
+            >
               <div class="d-flex flex-row align-items-center">
                 <span class="font-60 fw-medium text-black mb-0 me-20">02</span>
                 <h3 class="font-30 fw-medium text-black">
@@ -545,8 +664,8 @@
               aria-labelledby="headingTwo"
               data-parent="#accordionExample"
             >
-              <div class="">
-                <p class="font-18 fw-normal text-black">
+              <div class="border-top-black pt-30">
+                <p class="font-18 fw-normal text-black pb-30">
                   During the initial consultation, we will discuss your business
                   goals and objectives, target audience, and current marketing
                   efforts. This will allow us to understand your needs and
@@ -557,7 +676,10 @@
           </div>
 
           <div class="working-process-card br-45 bg-grey px-60 mb-30">
-            <div class="d-flex justify-content-between" id="headingThree">
+            <div
+              class="d-flex justify-content-between pt-30 pb-30"
+              id="headingThree"
+            >
               <div class="d-flex flex-row align-items-center">
                 <span class="font-60 fw-medium text-black mb-0 me-20">03</span>
                 <h3 class="font-30 fw-medium text-black">Implementation</h3>
@@ -580,8 +702,8 @@
               aria-labelledby="headingThree"
               data-parent="#accordionExample"
             >
-              <div class="">
-                <p class="font-18 fw-normal text-black">
+              <div class="border-top-black pt-30">
+                <p class="font-18 fw-normal text-black pb-30">
                   During the initial consultation, we will discuss your business
                   goals and objectives, target audience, and current marketing
                   efforts. This will allow us to understand your needs and
@@ -592,7 +714,10 @@
           </div>
 
           <div class="working-process-card br-45 bg-grey px-60 mb-30">
-            <div class="d-flex justify-content-between" id="headingFour">
+            <div
+              class="d-flex justify-content-between pt-30 pb-30"
+              id="headingFour"
+            >
               <div class="d-flex flex-row align-items-center">
                 <span class="font-60 fw-medium text-black mb-0 me-20">04</span>
                 <h3 class="font-30 fw-medium text-black">
@@ -617,8 +742,8 @@
               aria-labelledby="headingFour"
               data-parent="#accordionExample"
             >
-              <div class="">
-                <p class="font-18 fw-normal text-black">
+              <div class="border-top-black pt-30">
+                <p class="font-18 fw-normal text-black pb-30">
                   During the initial consultation, we will discuss your business
                   goals and objectives, target audience, and current marketing
                   efforts. This will allow us to understand your needs and
@@ -629,7 +754,10 @@
           </div>
 
           <div class="working-process-card br-45 bg-grey px-60 mb-30">
-            <div class="d-flex justify-content-between" id="headingFour">
+            <div
+              class="d-flex justify-content-between pt-30 pb-30"
+              id="headingFive"
+            >
               <div class="d-flex flex-row align-items-center">
                 <span class="font-60 fw-medium text-black mb-0 me-20">05</span>
                 <h3 class="font-30 fw-medium text-black">
@@ -640,22 +768,22 @@
                 class="btn btn-link btn-block text-left process-button"
                 type="button"
                 data-toggle="collapse"
-                data-target="#collapseFour"
+                data-target="#collapseFive"
                 aria-expanded="true"
-                aria-controls="collapseFour"
+                aria-controls="collapseFive"
               >
                 <img class="pm-icon" src="/images/plus.png" alt="" />
               </button>
             </div>
 
             <div
-              id="collapseFour"
+              id="collapseFive"
               class="collapse"
-              aria-labelledby="headingFour"
+              aria-labelledby="headingFive"
               data-parent="#accordionExample"
             >
-              <div class="">
-                <p class="font-18 fw-normal text-black">
+              <div class="border-top-black pt-30">
+                <p class="font-18 fw-normal text-black pb-30">
                   During the initial consultation, we will discuss your business
                   goals and objectives, target audience, and current marketing
                   efforts. This will allow us to understand your needs and
@@ -666,7 +794,10 @@
           </div>
 
           <div class="working-process-card br-45 bg-grey px-60 mb-30">
-            <div class="d-flex justify-content-between" id="headingFour">
+            <div
+              class="d-flex justify-content-between pt-30 pb-30"
+              id="headingSix"
+            >
               <div class="d-flex flex-row align-items-center">
                 <span class="font-60 fw-medium text-black mb-0 me-20">06</span>
                 <h3 class="font-30 fw-medium text-black">
@@ -677,22 +808,22 @@
                 class="btn btn-link btn-block text-left process-button"
                 type="button"
                 data-toggle="collapse"
-                data-target="#collapseFour"
+                data-target="#collapseSix"
                 aria-expanded="true"
-                aria-controls="collapseFour"
+                aria-controls="collapseSix"
               >
                 <img class="pm-icon" src="/images/plus.png" alt="" />
               </button>
             </div>
 
             <div
-              id="collapseFour"
+              id="collapseSix"
               class="collapse"
-              aria-labelledby="headingFour"
+              aria-labelledby="headingSix"
               data-parent="#accordionExample"
             >
-              <div class="">
-                <p class="font-18 fw-normal text-black">
+              <div class="border-top-black pt-30">
+                <p class="font-18 fw-normal text-black pb-30">
                   During the initial consultation, we will discuss your business
                   goals and objectives, target audience, and current marketing
                   efforts. This will allow us to understand your needs and
@@ -705,25 +836,31 @@
       </section>
 
       <section class="team pt-70">
-        <div class="d-flex flex-row pb-80">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center align-items-md-start pb-80"
+        >
           <h2
             class="font-40 fw-medium text-black bg-lime px-2 me-40 lh-51 mb-0 br-8"
           >
             Team
           </h2>
-          <div class="">
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+          <div class="mt-4 mt-md-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               Meet the skilled and experienced team behind our
             </p>
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               successful digital marketing strategies
             </p>
           </div>
         </div>
 
-        <div class="row g-4">
-          <div class="col-4">
-            <div class="px-35 py-40 border-dark br-45 team-card">
+        <div class="row g-4 d-flex justify-content-end">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="px-35 py-40 border-dark br-45 team-card h-100">
               <div
                 class="position-relative d-flex flex-row align-items-end border-bottom-black pb-28"
               >
@@ -736,7 +873,7 @@
                   <p class="font-18 fw-normal mb-0 lh-23">CEO and Founder</p>
                 </div>
               </div>
-              <p class="font-18 fw-normal mb-0 pt-28 lh-23">
+              <p class="font-18 fw-normal mb-0 pt-28 lh-23 h-100">
                 10+ years of experience in digital marketing. Expertise in SEO,
                 PPC, and content strategy
               </p>
@@ -744,8 +881,8 @@
           </div>
 
           <!-- 2 -->
-          <div class="col-4">
-            <div class="px-35 py-40 border-dark br-45 team-card">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="px-35 py-40 border-dark br-45 team-card h-100">
               <div
                 class="position-relative d-flex flex-row align-items-end border-bottom-black pb-28"
               >
@@ -760,7 +897,7 @@
                   </p>
                 </div>
               </div>
-              <p class="font-18 fw-normal mb-0 pt-28 lh-23">
+              <p class="font-18 fw-normal mb-0 pt-28 lh-23 h-100">
                 7+ years of experience in project management and team
                 leadership. Strong organizational and communication skills
               </p>
@@ -768,8 +905,8 @@
           </div>
 
           <!-- 3 -->
-          <div class="col-4">
-            <div class="px-35 py-40 border-dark br-45 team-card">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="px-35 py-40 border-dark br-45 team-card h-100">
               <div
                 class="position-relative d-flex flex-row align-items-end border-bottom-black pb-28"
               >
@@ -784,7 +921,7 @@
                   </p>
                 </div>
               </div>
-              <p class="font-18 fw-normal mb-0 pt-28 lh-23">
+              <p class="font-18 fw-normal mb-0 pt-28 lh-23 h-100">
                 5+ years of experience in SEO and content creation. Proficient
                 in keyword research and on-page optimization
               </p>
@@ -792,8 +929,8 @@
           </div>
 
           <!-- 4 -->
-          <div class="col-4">
-            <div class="px-35 py-40 border-dark br-45 team-card">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="px-35 py-40 border-dark br-45 team-card h-100">
               <div
                 class="position-relative d-flex flex-row align-items-end border-bottom-black pb-28"
               >
@@ -806,7 +943,7 @@
                   <p class="font-18 fw-normal mb-0 lh-23">PPC Manager</p>
                 </div>
               </div>
-              <p class="font-18 fw-normal mb-0 pt-28 lh-23">
+              <p class="font-18 fw-normal mb-0 pt-28 lh-23 h-100">
                 3+ years of experience in paid search advertising. Skilled in
                 campaign management and performance analysis
               </p>
@@ -814,8 +951,8 @@
           </div>
 
           <!-- 5 -->
-          <div class="col-4">
-            <div class="px-35 py-40 border-dark br-45 team-card">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="px-35 py-40 border-dark br-45 team-card h-100">
               <div
                 class="position-relative d-flex flex-row align-items-end border-bottom-black pb-28"
               >
@@ -832,7 +969,7 @@
                   </p>
                 </div>
               </div>
-              <p class="font-18 fw-normal mb-0 pt-28 lh-23">
+              <p class="font-18 fw-normal mb-0 pt-28 lh-23 h-100">
                 4+ years of experience in social media marketing. Proficient in
                 creating and scheduling content, analyzing metrics, and building
                 engagement
@@ -841,8 +978,8 @@
           </div>
 
           <!-- 6 -->
-          <div class="col-4">
-            <div class="px-35 py-40 border-dark br-45 team-card">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="px-35 py-40 border-dark br-45 team-card h-100">
               <div
                 class="position-relative d-flex flex-row align-items-end border-bottom-black pb-28"
               >
@@ -862,9 +999,11 @@
               </p>
             </div>
           </div>
-          <div class="d-flex justify-content-end mt-40">
+          <div
+            class="col-12 col-md-auto d-flex justify-content-center justify-content-lg-end mt-40"
+          >
             <button
-              class="font-20 fw-normal text-white px-76 py-20 bg-dark lh-28 border-0 br-14"
+              class="font-20 fw-normal text-white px-76 py-20 bg-dark lh-28 border-0 br-14 w-100"
             >
               See all team
             </button>
@@ -873,17 +1012,23 @@
       </section>
 
       <section class="testimonials mt-100 pb-70">
-        <div class="d-flex flex-row pb-80">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center align-items-md-start pb-80"
+        >
           <h2
             class="font-40 fw-medium text-black bg-lime px-2 me-40 lh-51 mb-0 br-8"
           >
             Testimonials
           </h2>
-          <div class="">
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+          <div class="mt-4 mt-md-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               Hear from Our Satisfied Clients: Read Our Testimonials
             </p>
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               to Learn More about Our Digital Marketing Services
             </p>
           </div>
@@ -891,94 +1036,95 @@
 
         <div class="bg-dark br-45">
           <div class="testimonials-slider">
+            <!-- 1 -->
             <div class="testimonials-card pt-84 pb-124">
-              <div class="border-lime pt-48 px-52">
-                <p class="font-18 fw-normal text-white mb-0 lh-23">
-                  "We have been working with Positivus for the past year and
-                  have seen a significant increase in website traffic and leads
-                  as a result of their efforts. The team is professional,
-                  responsive, and truly cares about the success of our business.
-                  We highly recommend Positivus to any company looking to grow
-                  their online presence."
-                </p>
-              </div>
-              <div class="ms-80 mt-20">
+              <p
+                class="font-18 fw-normal text-white border-lime mb-0 lh-23 py-48 br-45 px-52"
+              >
+                "We have been working with Positivus for the past year and have
+                seen a significant increase in website traffic and leads as a
+                result of their efforts. The team is professional, responsive,
+                and truly cares about the success of our business. We highly
+                recommend Positivus to any company looking to grow their online
+                presence."
+              </p>
+              <div class="ms-80 mt-48">
                 <h4 class="font-20 fw-medium text-lime mb-0">John Smith</h4>
                 <span class="font-18 fw-normal text-white mb-0"
                   >Marketing Director at XYZ Corp</span
                 >
               </div>
             </div>
-
+            <!-- 2 -->
             <div class="testimonials-card pt-84 pb-124">
-              <div class="border-lime pt-48 px-52">
-                <p class="font-18 fw-normal text-white mb-0 lh-23">
-                  "We have been working with Positivus for the past year and
-                  have seen a significant increase in website traffic and leads
-                  as a result of their efforts. The team is professional,
-                  responsive, and truly cares about the success of our business.
-                  We highly recommend Positivus to any company looking to grow
-                  their online presence."
-                </p>
-              </div>
-              <div class="ms-80 mt-20">
+              <p
+                class="font-18 fw-normal text-white border-lime mb-0 lh-23 py-48 br-45 px-52"
+              >
+                "We have been working with Positivus for the past year and have
+                seen a significant increase in website traffic and leads as a
+                result of their efforts. The team is professional, responsive,
+                and truly cares about the success of our business. We highly
+                recommend Positivus to any company looking to grow their online
+                presence."
+              </p>
+              <div class="ms-80 mt-48">
                 <h4 class="font-20 fw-medium text-lime mb-0">John Smith</h4>
                 <span class="font-18 fw-normal text-white mb-0"
                   >Marketing Director at XYZ Corp</span
                 >
               </div>
             </div>
-
-            <div class="testimonials-card pt-84 pb-124">
-              <div class="border-lime pt-48 px-52">
-                <p class="font-18 fw-normal text-white mb-0 lh-23">
-                  "We have been working with Positivus for the past year and
-                  have seen a significant increase in website traffic and leads
-                  as a result of their efforts. The team is professional,
-                  responsive, and truly cares about the success of our business.
-                  We highly recommend Positivus to any company looking to grow
-                  their online presence."
-                </p>
-              </div>
-              <div class="ms-80 mt-20">
+            <!-- 3 -->
+            <div class="testimonials-card pt-84 pb-124 d-flex flex-column">
+              <p
+                class="font-18 fw-normal text-white border-lime mb-0 lh-23 py-48 br-45 px-52"
+              >
+                "We have been working with Positivus for the past year and have
+                seen a significant increase in website traffic and leads as a
+                result of their efforts. The team is professional, responsive,
+                and truly cares about the success of our business. We highly
+                recommend Positivus to any company looking to grow their online
+                presence."
+              </p>
+              <div class="ms-80 mt-48">
                 <h4 class="font-20 fw-medium text-lime mb-0">John Smith</h4>
                 <span class="font-18 fw-normal text-white mb-0"
                   >Marketing Director at XYZ Corp</span
                 >
               </div>
             </div>
-
-            <div class="testimonials-card pt-84 pb-124">
-              <div class="border-lime pt-48 px-52">
-                <p class="font-18 fw-normal text-white mb-0 lh-23">
-                  "We have been working with Positivus for the past year and
-                  have seen a significant increase in website traffic and leads
-                  as a result of their efforts. The team is professional,
-                  responsive, and truly cares about the success of our business.
-                  We highly recommend Positivus to any company looking to grow
-                  their online presence."
-                </p>
-              </div>
-              <div class="ms-80 mt-20">
+            <!-- 4 -->
+            <div class="testimonials-card pt-84 pb-124 d-flex flex-column">
+              <p
+                class="font-18 fw-normal text-white border-lime mb-0 lh-23 py-48 br-45 px-52"
+              >
+                "We have been working with Positivus for the past year and have
+                seen a significant increase in website traffic and leads as a
+                result of their efforts. The team is professional, responsive,
+                and truly cares about the success of our business. We highly
+                recommend Positivus to any company looking to grow their online
+                presence."
+              </p>
+              <div class="ms-80 mt-48">
                 <h4 class="font-20 fw-medium text-lime mb-0">John Smith</h4>
                 <span class="font-18 fw-normal text-white mb-0"
                   >Marketing Director at XYZ Corp</span
                 >
               </div>
             </div>
-
-            <div class="testimonials-card pt-84 pb-124">
-              <div class="border-lime pt-48 px-52">
-                <p class="font-18 fw-normal text-white mb-0 lh-23">
-                  "We have been working with Positivus for the past year and
-                  have seen a significant increase in website traffic and leads
-                  as a result of their efforts. The team is professional,
-                  responsive, and truly cares about the success of our business.
-                  We highly recommend Positivus to any company looking to grow
-                  their online presence."
-                </p>
-              </div>
-              <div class="ms-80 mt-20">
+            <!-- 5 -->
+            <div class="testimonials-card pt-84 pb-124 d-flex flex-column">
+              <p
+                class="font-18 fw-normal text-white border-lime mb-0 lh-23 py-48 br-45 px-52"
+              >
+                "We have been working with Positivus for the past year and have
+                seen a significant increase in website traffic and leads as a
+                result of their efforts. The team is professional, responsive,
+                and truly cares about the success of our business. We highly
+                recommend Positivus to any company looking to grow their online
+                presence."
+              </p>
+              <div class="ms-80 mt-48">
                 <h4 class="font-20 fw-medium text-lime mb-0">John Smith</h4>
                 <span class="font-18 fw-normal text-white mb-0"
                   >Marketing Director at XYZ Corp</span
@@ -1001,24 +1147,30 @@
       </section>
 
       <section class="contact mt-70 pb-70">
-        <div class="d-flex flex-row pb-80">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center align-items-md-start pb-80"
+        >
           <h2
             class="font-40 fw-medium text-black bg-lime px-2 me-40 lh-51 mb-0 br-8"
           >
             Contact Us
           </h2>
-          <div class="">
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+          <div class="mt-4 mt-md-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               Connect with Us: Let's Discuss Your
             </p>
 
-            <p class="font-18 fw-normal text-black lh-23 m-0">
+            <p
+              class="font-18 fw-normal text-black text-center text-md-start lh-23 m-0"
+            >
               Digital Marketing Needs
             </p>
           </div>
         </div>
 
-        <div class="bg-grey br-45 pt-60 pb-80 ps-100 position-relative">
+        <div class="bg-grey br-45 contact-grey position-relative">
           <form class="contact-form">
             <div class="d-flex flex-row">
               <div class="form-check d-flex align-items-center me-35">
@@ -1045,7 +1197,7 @@
                 </label>
               </div>
             </div>
-            <div class="mb-4 mt-40">
+            <div class="mb-4 mt-40 position-relative z-5">
               <label for="exampleInputEmail1" class="form-label mb-1"
                 >Name</label
               >
@@ -1088,7 +1240,7 @@
             </button>
           </form>
           <img
-            class="contact-img position-absolute"
+            class="contact-img position-absolute d-none d-md-block"
             src="/images/contact-bg.svg"
             alt=""
           />
@@ -1096,81 +1248,144 @@
       </section>
     </div>
 
-    <footer class="container bg-dark px-60 pt-55 border-radius-top mt-70 pb-50">
-      <div class="border-bottom pb-50">
-        <div class="d-flex flex-row justify-content-between align-items-center">
-          <a class="navbar-brand" href="#">
-            <img src="/images/positivus-logo-white.svg" alt="" />
-          </a>
+    <footer
+      id="footer"
+      class="container bg-dark px-60 pt-55 border-radius-top mt-70 pb-50"
+    >
+      <div id="infooter" class="">
+        <div class="border-bottom pb-50">
+          <div
+            class="d-flex flex-column flex-xl-row justify-content-between align-items-center"
+          >
+            <a class="navbar-brand" href="#">
+              <img src="/images/positivus-logo-white.svg" alt="" />
+            </a>
 
-          <div class="d-flex">
-            <a
-              class="font-18 fw-normal px-0 me-40 active text-white"
-              aria-current="page"
-              href="#"
-              >About us</a
-            >
-            <a class="font-18 fw-normal px-0 me-40 text-white" href="#"
-              >Services</a
-            >
-            <a class="font-18 fw-normal px-0 me-40 text-white" href="#"
-              >Use Cases</a
-            >
-            <a class="font-18 fw-normal px-0 me-40 text-white" href="#"
-              >Pricing</a
-            >
-            <a class="font-18 fw-normal px-0 me-40 text-white" href="#">Blog</a>
-          </div>
-          <div class="">
-            <a href="" class="me-20"><img src="/images/in.png" alt="" /></a>
-            <a href="" class="me-20"
-              ><img src="/images/facebook.png" alt=""
-            /></a>
-            <a href=""><img src="/images/twitter.png" alt="" /></a>
-          </div>
-        </div>
-        <div class="d-flex flex-row justify-content-between mt-66">
-          <div class="">
-            <h4
-              class="font-20 fw-normal bg-lime text-black px-2 mb-26 br-8"
-              style="width: fit-content"
-            >
-              Contact us:
-            </h4>
-            <p class="font-18 fw-normal text-white mb-20 lh-23">
-              Email: info@positivus.com
-            </p>
-            <p class="font-18 fw-normal text-white mb-20 lh-23">
-              Phone: 555-567-8901
-            </p>
-            <p class="font-18 fw-normal text-white mb-0 lh-23">
-              Address: 1234 Main St<br />
-              Moonstone City, Stardust State 12345
-            </p>
+            <div class="d-flex flex-column flex-md-row my-4 my-xl-0">
+              <a
+                class="font-18 fw-normal px-0 me-40 text-center text-lg-start active text-white mb-2 mb-lg-0"
+                aria-current="page"
+                href="#"
+                >About us</a
+              >
+              <a
+                class="font-18 fw-normal px-0 me-40 text-center text-lg-start text-white mb-2 mb-lg-0"
+                href="#"
+                >Services</a
+              >
+              <a
+                class="font-18 fw-normal px-0 me-40 text-center text-lg-start text-white mb-2 mb-lg-0"
+                href="#"
+                >Use Cases</a
+              >
+              <a
+                class="font-18 fw-normal px-0 me-40 text-center text-lg-start text-white mb-2 mb-lg-0"
+                href="#"
+                >Pricing</a
+              >
+              <a
+                class="font-18 fw-normal px-0 me-40 text-center text-lg-start text-white"
+                href="#"
+                >Blog</a
+              >
+            </div>
+            <div class="">
+              <a href="" class="me-20"><img src="/images/in.png" alt="" /></a>
+              <a href="" class="me-20"
+                ><img src="/images/facebook.png" alt=""
+              /></a>
+              <a href=""><img src="/images/twitter.png" alt="" /></a>
+            </div>
           </div>
           <div
-            class="footer-form py-58 px-40 br-14 bg-dark-grey d-flex justify-content-between"
+            class="d-flex flex-column flex-lg-row justify-content-between mt-66"
           >
-            <input
-              type="email"
-              placeholder="Email"
-              class="form-control py-22 px-35 br-14 border-white bg-dark-grey text-white me-20"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <button
-              class="font-20 fw-normal px-35 py-20 text-black lh-28 bg-lime border-0 br-14"
+            <div
+              class="d-flex flex-column flex-md-row flex-lg-column justify-content-center align-items-center align-items-lg-start mb-5 mb-lg-0"
             >
-              Subscribe&nbsp;to&nbsp;news
-            </button>
+              <h4
+                class="font-20 fw-normal bg-lime text-black px-2 mb-26 br-8 me-4 me-lg-0"
+                style="width: fit-content"
+              >
+                Contact us:
+              </h4>
+              <div class="">
+                <p
+                  class="font-18 fw-normal text-white text-center text-lg-start mb-20 lh-23"
+                >
+                  Email: info@positivus.com
+                </p>
+                <p
+                  class="font-18 fw-normal text-white text-center text-lg-start mb-20 lh-23"
+                >
+                  Phone: 555-567-8901
+                </p>
+                <p
+                  class="font-18 fw-normal text-white text-center text-lg-start mb-0 lh-23"
+                >
+                  Address: 1234 Main St<br />
+                  Moonstone City, Stardust State 12345
+                </p>
+              </div>
+            </div>
+            <div
+              class="footer-form py-58 px-40 br-14 bg-dark-grey d-flex flex-column flex-md-row justify-content-between"
+            >
+              <input
+                type="email"
+                placeholder="Email"
+                class="form-control py-22 px-35 br-14 border-white bg-dark-grey text-white me-20 mb-4 mb-md-0"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <button
+                class="font-20 fw-normal px-35 py-20 text-black lh-28 bg-lime border-0 br-14"
+              >
+                Subscribe&nbsp;to&nbsp;news
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="d-flex flex-row pt-50">
-        <p class="font-18 fw-normal text-white lh-28 me-40 mb-0">
-          &copy; 2023 Positivus. All Rights Reserved.
-        </p>
-        <a class="font-18 fw-normal text-white lh-28" href="">Privacy Policy</a>
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start pt-50"
+        >
+          <span class="font-18 fw-normal text-white lh-28 me-0 me-lg-5 mb-0">
+            2026 Positivus — Made with
+            <a
+              href="https://getbootstrap.com/"
+              class="font-18 fw-normal text-white lh-28"
+              >Bootstrap 5</a
+            >
+          </span>
+          <!-- <a class="font-18 fw-normal text-white lh-28" href=""
+            >Privacy Policy</a
+          > -->
+        </div>
+
+        <div class="d-flex flex-column align-items-center align-items-lg-end">
+          <div class="">
+            <span class="font-18 fw-normal text-white lh-28 mb-0 me-2">
+              Frontend development:
+            </span>
+            <a
+              class="font-18 fw-medium text-white lh-28"
+              target="_blank"
+              href="https://github.com/Akim262000/Positivus"
+              >Akim</a
+            >
+          </div>
+          <div class="">
+            <span class="font-18 fw-normal text-white lh-28 mb-0 me-2">
+              Landing Page Design by:
+            </span>
+            <a
+              class="font-18 fw-medium text-white lh-28"
+              target="_blank"
+              href="https://www.figma.com/community/file/1230604708032389430/positivus-landing-page-design?q_id=8c40647e-cfc0-4355-b90a-90ef9e530173"
+              >Olga</a
+            >
+          </div>
+        </div>
       </div>
     </footer>
 

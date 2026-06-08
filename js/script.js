@@ -1,24 +1,30 @@
 document.querySelectorAll(".collapse").forEach((collapse) => {
   collapse.addEventListener("show.bs.collapse", function () {
     const card = this.closest(".working-process-card");
-    const button = card.querySelector(".process-button");
-    const icon = button.querySelector(".pm-icon");
+    const icon = card.querySelector(".pm-icon");
 
     card.classList.remove("bg-grey");
     card.classList.add("bg-lime");
 
-    icon.src = "/images/minus.png";
+    icon.classList.add("rotate");
+
+    setTimeout(() => {
+      icon.src = "/images/minus.png";
+    }, 150);
   });
 
   collapse.addEventListener("hide.bs.collapse", function () {
     const card = this.closest(".working-process-card");
-    const button = card.querySelector(".process-button");
-    const icon = button.querySelector(".pm-icon");
+    const icon = card.querySelector(".pm-icon");
 
     card.classList.remove("bg-lime");
     card.classList.add("bg-grey");
 
-    icon.src = "/images/plus.png";
+    icon.classList.remove("rotate");
+
+    setTimeout(() => {
+      icon.src = "/images/plus.png";
+    }, 150);
   });
 });
 
@@ -37,19 +43,45 @@ $(".testimonials-slider").slick({
       breakpoint: 768,
       settings: {
         arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 3,
+        centerMode: false,
+        slidesToShow: 1,
+        width: "100%",
+        variableWidth: false,
       },
     },
     {
       breakpoint: 480,
       settings: {
         arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
+        centerMode: false,
         slidesToShow: 1,
+        width: "100%",
+        variableWidth: false,
       },
     },
   ],
 });
+
+
+function updateFooterClasses() {
+  const footer = document.querySelector('#footer');
+  const infooter = document.querySelector('#infooter');
+  const windowWidth = window.innerWidth;
+
+
+  if (windowWidth < 767) {
+    // Убираем класс 'infooter', добавляем 'container'
+    footer.classList.remove('container');
+    infooter.classList.add('container');
+  } else {
+    // Убираем класс 'container', добавляем 'infooter'
+    infooter.classList.remove('container');
+    footer.classList.add('container');
+  }
+}
+
+// Выполняем при загрузке страницы
+updateFooterClasses();
+
+// Выполняем при изменении размера окна
+window.addEventListener('resize', updateFooterClasses);
