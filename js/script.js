@@ -1,3 +1,8 @@
+
+document.querySelector(".navbar-toggler").addEventListener("click", function () {
+  this.classList.toggle("open");
+});
+
 document.querySelectorAll(".collapse").forEach((collapse) => {
   collapse.addEventListener("show.bs.collapse", function () {
     const card = this.closest(".working-process-card");

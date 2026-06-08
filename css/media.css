@@ -1,3 +1,100 @@
+@media (max-width: 1199px) {
+  header .me-40 {
+    margin-right: 0;
+  }
+
+  .burger-menu {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 24px;
+    border-radius: 0 0 45px 45px;
+    border-bottom: 1px solid #191a23;
+    border-left: 1px solid #191a23;
+    border-right: 1px solid #191a23;
+
+    background-color: white;
+    z-index: 9999;
+  }
+
+  .border-menu {
+    padding: 24px;
+    border-radius: 45px;
+    border: 1px solid #191a23;
+  }
+  .navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler-icon {
+    background-image: none !important;
+    width: 30px;
+    height: 2px;
+    background: #000; /* средняя полоска */
+    position: relative;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    transition: 0.3s;
+  }
+
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+
+  .navbar-toggler-icon::after {
+    top: 8px;
+  }
+
+  .navbar-toggler.open .navbar-toggler-icon {
+    background: transparent;
+  }
+
+  .navbar-toggler.open .navbar-toggler-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler.open .navbar-toggler-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* крестик */
+  .navbar-toggler.open .navbar-toggler-icon::before {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .navbar-toggler.open .navbar-toggler-icon::after {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+}
+
 @media (max-width: 991px) {
   .border-bottom-white {
     border-bottom: 1px solid #dee2e6 !important;

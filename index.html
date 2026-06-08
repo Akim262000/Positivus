@@ -35,25 +35,30 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-xl navbar-light pt-60 pb-70">
-        <div class="container d-flex flex-row justify-content-between">
+    <header class="">
+      <nav class="navbar navbar-expand-xl navbar-light pt-60 pb-70 ">
+        <div class="container d-flex flex-row justify-content-between ">
           <a class="navbar-brand" href="#">
             <img src="/images/positivus-logo.svg" alt="" />
           </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler collapsed"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto d-flex align-items-center">
+          <div
+            class="burger-menu collapse navbar-collapse"
+            id="navbarNavAltMarkup"
+          >
+            <div
+              class="border-menu navbar-nav ms-auto d-flex align-items-center"
+            >
               <a
                 class="nav-link font-20 fw-normal px-0 me-40 active"
                 aria-current="page"
@@ -70,7 +75,9 @@
                 >Pricing</a
               >
               <a class="nav-link font-20 fw-normal px-0 me-40" href="#">Blog</a>
-              <button class="font-20 fw-normal px-35 py-20 br-14 bg-white">
+              <button
+                class="font-20 fw-normal px-35 py-20 br-14 bg-white mt-4 mt-xl-0"
+              >
                 Request a quote
               </button>
             </div>
@@ -174,7 +181,7 @@
             help businesses grow and succeed online. These services include:
           </p>
         </div>
-        <div class="row gx-0 gx-md-5 gy-5">
+        <div class="row gx-0 gx-xl-5 gy-5">
           <!-- 1 -->
           <div class="col-12 col-xl-6 d-flex">
             <div class="p-50 bg-grey br-45 services-card h-100 w-100">
@@ -1304,7 +1311,7 @@
               class="d-flex flex-column flex-md-row flex-lg-column justify-content-center align-items-center align-items-lg-start mb-5 mb-lg-0"
             >
               <h4
-                class="font-20 fw-normal bg-lime text-black px-2 mb-26 br-8 me-4 me-lg-0"
+                class="font-20 fw-normal bg-lime text-black px-2 mb-26 br-8 me-0 me-md-4 me-lg-0"
                 style="width: fit-content"
               >
                 Contact us:
@@ -1334,7 +1341,7 @@
               <input
                 type="email"
                 placeholder="Email"
-                class="form-control py-22 px-35 br-14 border-white bg-dark-grey text-white me-20 mb-4 mb-md-0"
+                class="form-control py-22 px-35 br-14 border-white bg-dark-grey text-white me-0 me-md-4 mb-4 mb-md-0"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
